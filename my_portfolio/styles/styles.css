@@ -961,4 +961,17 @@ section {
   }
 }
 
+button {
+  font-family: serif;
+  background-color: var(--color-grey-5);
+  color: var(--color-white);
+}
+button:hover{
+  background-color: var(--color-secondary);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+button:active{
+  transform: scale(1.1);
+}
 /*# sourceMappingURL=styles.css.map */
