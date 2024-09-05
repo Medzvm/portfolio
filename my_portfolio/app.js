@@ -71,8 +71,7 @@ $(document).ready(function () {
             error: function (error) {
                 console.error('Error!', error);
                 Swal.fire({
-                        imageUrl: "assets/img/Lingoland_logo.png",
-                        imageAlt: "Custom Success Icon",
+                    icon: 'success',
                         title: 'Success!',
                         text: 'Your message is sent. Thank you for reaching out.',
                         width: 600,
