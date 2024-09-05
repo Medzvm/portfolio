@@ -12,7 +12,7 @@
     })
 })();
 
-const scriptURL = 'Your url from deployment';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz6gfSTSm0gWQrqJCeV83lhfvhGt_uon1i9UYjzo8vVC_dPueFmBEcYS4NKfS0ibJvAsQ/exec';
 
 $(document).ready(function () {
     $('#contact-form').on('submit', function (e) {
