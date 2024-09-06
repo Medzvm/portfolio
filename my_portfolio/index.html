@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -595,22 +596,22 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form method="post" id="contact-form" class="contact-form">
+                        <form name="contact-form" class="contact-form" method="post" id="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" name="name" required placeholder="YOUR NAME">
-                                <input type="email" required name="email" placeholder="YOUR EMAIL">
+                                <input type="text" id="name" name="name" required placeholder="YOUR NAME">
+                                <input type="email" id="email" name="Email" required placeholder="YOUR EMAIL">
                             </div>
                             <div class="input-control">
-                                <input type="text" required name="subject" placeholder="ENTER SUBJECT">
+                                <input type="text" id="reason" name="reason" required placeholder="Reason Of Contact">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" name="message" rows="8" placeholder="Message Here..."></textarea>
+                                <textarea name="message" cols="15" rows="8" placeholder="Message Me Here, let me know what you need my service for or ask me any question you'd like"></textarea>
                             </div>
-                            <div class="submit-btn">
-                                <button type="submit" class="main-btn">
-                                    <span class="btn-text">Send </span>
-                                    <span class="btn-icon"> <i class="fas fa-paper-plane"></i></span>
-                                </button>
+                            <div class="btn-con" style="cursor:pointer; float:right">
+                                <a class="main-btn" id="send">
+                                    <span class="btn-text">SEND</span>
+                                    <span class="btn-icon"><i class="fa fa-briefcase"></i></span>
+                                </a>
                             </div>
                         </form>
                     </div>
@@ -640,10 +641,9 @@
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
+    <script src="app.js"></script>
     <script src="sweetalert2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
-    <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
